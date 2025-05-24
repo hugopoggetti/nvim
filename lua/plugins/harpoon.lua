@@ -1,0 +1,43 @@
+return {
+  "ThePrimeagen/harpoon",
+  branch = "harpoon2",
+  dependencies = { "nvim-lua/plenary.nvim" },
+  config = function()
+    local harpoon = require("harpoon")
+    local telescope = require("telescope")
+
+    harpoon:setup()
+    telescope.load_extension("harpoon")
+    local list = harpoon:list()
+    vim.keymap.set("n", "<leader>mc", function()
+      list:clear()
+    end)
+    vim.keymap.set("n", "<leader>ma", function()
+      list:add()
+    end)
+    vim.keymap.set("n", "<leader>mr", function()
+      list:remove()
+    end)
+    vim.keymap.set("n", "<leader>m1", function()
+      list:select(1)
+    end)
+    vim.keymap.set("n", "<leader>m2", function()
+      list:select(2)
+    end)
+    vim.keymap.set("n", "<leader>m3", function()
+      list:select(3)
+    end)
+    vim.keymap.set("n", "<leader>m4", function()
+      list:select(4)
+    end)
+    vim.keymap.set("n", "<leader>mn", function()
+      list:next()
+    end)
+    vim.keymap.set("n", "<leader>mp", function()
+      list:prev()
+    end)
+    vim.keymap.set("n", "<leader>mm", function()
+      telescope.extensions.harpoon.marks({})
+    end)
+  end,
+}
