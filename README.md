@@ -29,7 +29,7 @@ rm -rf ~/.local/share/nvim && rm -rf ~/.config/nvim/lazy-lock.json
 ├── lazy-lock.json                      # Plugin version lockfile
 ├── lazyvim.json                        # LazyVim configuration
 ├── lua/
-│   ├── config/                          # Core configuration
+│   ├── config/                         # Core configuration
 │   │   ├── autocmds.lua                # Auto commands
 │   │   ├── keymaps.lua                 # Key mappings
 │   │   ├── lazy.lua                    # Lazy.nvim setup
@@ -39,11 +39,11 @@ rm -rf ~/.local/share/nvim && rm -rf ~/.config/nvim/lazy-lock.json
 │   │   ├── basic.lua                   # Essential plugins
 │   │   ├── color.lua                   # Color themes
 │   │   ├── comments.lua                # Comment management
-│   │   ├── diffview.lua                 # Git diff viewer
+│   │   ├── diffview.lua                # Git diff viewer
 │   │   ├── disable.lua                 # Disabled LazyVim plugins
 │   │   ├── git-worktree.lua            # Git worktree management
 │   │   ├── harpoon.lua                 # File navigation
-│   │   ├── lspconfig.lua                # Language server configuration
+│   │   ├── lspconfig.lua               # Language server configuration
 │   │   ├── lualine.lua                 # Status line
 │   │   ├── markdown-preview.lua        # Markdown preview
 │   │   ├── nvim-cmp.lua                # Autocompletion
