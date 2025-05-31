@@ -57,3 +57,4 @@ vim.opt.list = false
 -- disable horizontal scrolling
 vim.opt.wrap = true
 vim.opt.linebreak = true
+vim.g.miniindentscope_disable = true

@@ -1,6 +1,8 @@
 return {
-  { "blink.cmp", enabled = false },
-
+  -- {
+  --   "blink.cmp",
+  --   enabled = false,
+  -- },
   {
     "folke/noice.nvim",
     opts = {
@@ -9,8 +11,14 @@ return {
       popupmenu = { enabled = true },
     },
   },
-  { "lukas-reineke/indent-blankline.nvim", enabled = false },
-  { "echasnovski/mini.indentscope", enabled = false },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    enabled = false,
+  },
+  {
+    "echasnovski/mini.indentscope",
+    enabled = false,
+  },
   {
     "folke/noice.nvim",
     enabled = false,

@@ -5,12 +5,10 @@ return {
     priority = 1000,
     config = function()
       vim.opt.termguicolors = true
-      -- vim.opt.background = "light"
       vim.opt.background = "dark"
       vim.g.gruvbox_italic = 1
       vim.g.gruvbox_bold = 1
       vim.g.gruvbox_termcolors = 256
-      -- vim.g.gruvbox_contrast_dark = "medium"
       vim.g.gruvbox_contrast_dark = "soft"
       vim.g.gruvbox_contrast_light = "hard"
       vim.g.gruvbox_invert_selection = 0
@@ -60,4 +58,12 @@ return {
     priority = 1000,
     config = function() end,
   },
+  {
+    "rebelot/kanagawa.nvim",
+    priority = 1000,
+    config = function()
+      require("kanagawa").setup({ compile = true })
+    end,
+  },
+  { "Mofiqul/dracula.nvim", priority = 1000 },
 }
