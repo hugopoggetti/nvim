@@ -11,22 +11,22 @@ return {
       -- vim.diagnostic.config({
       --   float = { border = "rounded" },
       -- })
-      require("mason-lspconfig").setup({
-        ensure_installed = {
-          "clangd",
-          "hls",
-          "pyright",
-          "lua_ls",
-          "asm_lsp",
-          "cmake",
-          "yamlls",
-          "bashls",
-          "rust_analyzer",
-          "html",
-          "zls",
-        },
-        automatic_installation = true,
-      })
+      -- require("mason-lspconfig").setup({
+      --   ensure_installed = {
+      --     "clangd",
+      --     "hls",
+      --     "pyright",
+      --     "lua_ls",
+      --     "asm_lsp",
+      --     "cmake",
+      --     "yamlls",
+      --     "bashls",
+      --     "rust_analyzer",
+      --     "html",
+      --     "zls",
+      --   },
+      --   automatic_installation = true,
+      -- })
       local lspconfig = require("lspconfig")
       local util = require("lspconfig.util")
       local global_capabilities = vim.lsp.protocol.make_client_capabilities()

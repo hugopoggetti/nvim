@@ -1,9 +1,12 @@
 return {
   "nvim-telescope/telescope.nvim",
+  event = "VeryLazy",
   requires = {
     { "nvim-lua/plenary.nvim" },
     { "kyazdani42/nvim-web-devicons" },
     { "nvim-telescope/telescope-symbols.nvim" },
+    "BurntSushi/ripgrep",
+    "sharkdp/fd",
     {
       "nvim-telescope/telescope-fzf-native.nvim",
       run = "make",

@@ -58,3 +58,5 @@ vim.opt.list = false
 vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.g.miniindentscope_disable = true
+vim.opt.timeoutlen = 300
+vim.opt.filetype = "on"

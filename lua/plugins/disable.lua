@@ -24,6 +24,10 @@ return {
     enabled = false,
   },
   {
+    "folke/which-key.nvim",
+    enabled = false,
+  },
+  {
     "nvimdev/nui.nvim",
     enabled = false,
   },
