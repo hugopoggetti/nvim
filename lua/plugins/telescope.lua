@@ -39,6 +39,10 @@ return {
             ["<C-q>"] = actions.delete_buffer,
             ["<esc>"] = actions.close,
             ["kj"] = actions.close,
+            ["<C-b>"] = actions.results_scrolling_up,
+            ["<C-f>"] = actions.results_scrolling_down,
+            ["<C-d>"] = actions.preview_scrolling_down,
+            ["<C-Up>"] = actions.preview_scrolling_up,
           },
         },
       },
@@ -53,7 +57,6 @@ return {
     )
     vim.keymap.set({ "n", "v", "s" }, "<leader>f", "<cmd> Telescope find_files<cr>", {})
     vim.keymap.set({ "n", "v", "s" }, "<leader>b", "<cmd>Telescope file_browser<cr>", {})
-    vim.keymap.set({ "n", "v", "s" }, "<leader>r", "<cmd>Telescope grep_string<cr>", {})
     vim.keymap.set({ "n", "v", "s" }, "<leader>g", "<cmd>Telescope live_grep<cr>", {})
   end,
 }

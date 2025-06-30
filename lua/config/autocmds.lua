@@ -23,7 +23,8 @@ vim.api.nvim_create_autocmd("VimEnter", {
       vim.cmd.colorscheme("rose-pine-dawn")
     else
       vim.opt.background = "dark"
-      vim.cmd.colorscheme("gruvbox")
+      -- vim.cmd.colorscheme("gruvbox")
+      vim.cmd.colorscheme("vague")
       -- vim.cmd.colorscheme("dracula")
     end
   end,

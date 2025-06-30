@@ -107,7 +107,7 @@ return {
         },
         -- border = "rounded",
         winblend = 0,
-        -- scrollbar = false,
+        scrollbar = false,
       },
     },
 
