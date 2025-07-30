@@ -23,6 +23,7 @@ vim.opt.clipboard = "unnamedplus" -- use system clipboard
 vim.g.c_syntax_for_h = 1 -- .h file use C filetype instead of C++
 vim.opt.encoding = "utf-8" -- utf-8 encoding
 vim.opt.shellredir = ">" -- don"t inclue stderr when reading a command
+
 -- intuitif split opening
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -45,6 +46,7 @@ vim.opt.incsearch = true
 vim.g.c_syntax_for_h = 1
 -- status
 vim.opt.laststatus = 3 -- always a statusline (all window)
+vim.opt.statusline = "%f %m %=%l:%c %p%%"
 vim.opt.showcmd = true -- show current partial command in the bottom right
 vim.opt.showmode = true -- dont show current mode (i.e --INSERT--)
 

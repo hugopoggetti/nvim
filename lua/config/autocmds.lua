@@ -29,3 +29,16 @@ vim.api.nvim_create_autocmd("VimEnter", {
     end
   end,
 })
+
+-- Invert capsLock and ESC in nvim
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    os.execute('hyprctl keyword input:kb_options "caps:swapescape"')
+  end,
+})
+
+vim.api.nvim_create_autocmd("VimLeave", {
+  callback = function()
+    os.execute('hyprctl keyword input:kb_options ""')
+  end,
+})
